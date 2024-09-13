@@ -1,0 +1,10 @@
+{
+    "name": "gusta/proj-com-composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MeuProjeto\\": "src/"
+        }
+    },
+    "require": {}
+}
