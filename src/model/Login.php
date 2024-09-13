@@ -23,8 +23,8 @@ class Login {
             $senha = htmlspecialchars(trim($_POST["senha"]));
 
             foreach ($this->usuarios as $user) {
-                if ($user['usuario'] == $usuario && $user['senha'] == $senha) {
-                    echo "Acesso liberado!";
+                if ($user['usuario'] === $usuario && $user['senha'] === $senha) {
+                    header("Location: ./views/header.php");
                     return; // Interrompe o loop após encontrar o usuário
                 }
             }

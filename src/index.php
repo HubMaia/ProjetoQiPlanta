@@ -1,9 +1,13 @@
+//Inicio do projeto 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu Login</title> 
+
+    //Parte do CSS para estilizar o formulário
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,6 +63,8 @@
         }
     </style>
 </head>
+
+//Body contendo o formulário de login.
 <body>
     <div class="container">
         <h1>Faça seu Login ou se Cadastre abaixo:</h1>
@@ -71,11 +77,17 @@
             </div>
         </form>
        
+
+        //Inicio da parte que valida o login do usuário usando PHP.
         <?php
+
+
+//Este código abaixo exibe os erros que o PHP der na tela do usuário propositalmente, para que assim possam fazer a verificação manual do problema que possa estar ocorrendo.
 
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
+
         // Usa a classe Login do namespace MeuProjeto\Login
         
         include (__DIR__ . '/../vendor/autoload.php'); 
