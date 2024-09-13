@@ -15,12 +15,9 @@ class Cadastrar{
             $senhaCad = htmlspecialchars(trim($_POST["senha"]));
             $senha2Cad = htmlspecialchars(trim($_POST["senha2"]));
 
-
-
             if($senhaCad == $senha2Cad){
                 echo "Cadastro realizado com sucesso!";
-
-                header("Location: ./views/TelaCadastro.php");
+            header("Location: ./views/Menu_do_Usuario.php");    
 
             return; // Interrompe o loop após cadastrar o usuário.  
 

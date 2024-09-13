@@ -6,62 +6,9 @@
     <title>Faça seu Login</title> 
     <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
 
-</head>    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        form{
-            padding: 10px;
-            position: center;
-            margin-left: -15px;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-            margin:40px;
-        }
-        .container h2 {
-            margin-bottom: 20px;
-        }
-        .container input {
-            width: 100%;
-            padding: 10px 0;
-            margin: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .container button {
-            width: 48%;
-            padding: 10px;
-            margin: 10px 1%;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .login-btn {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .register-btn {
-            background-color: #008CBA;
-            color: white;
-        }
-        .login-btn:hover, .register-btn:hover {
-            opacity: 0.8;
-        }
-    </style>
-<body>
+    
+    <link rel="stylesheet" href="views/style.css">
+<head>
     <div class="container">
         <h1>Faça seu Login ou se Cadastre abaixo:</h1>
         <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -72,9 +19,6 @@
                 <button type="button" class="register-btn" onclick="window.location.href = './views/TelaCadastro.php';">Cadastrar</button>
             </div>
         </form>
-       
-
-        
         <?php
 
 
@@ -99,5 +43,6 @@
         $sysu->nome = "GustavoR";
         ?>
     </div>
+</head>
 </body>
 </html>
