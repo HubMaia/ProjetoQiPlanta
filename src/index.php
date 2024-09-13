@@ -1,5 +1,3 @@
-//Inicio do projeto 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu Login</title> 
 
-    //Parte do CSS para estilizar o formulário
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,7 +61,6 @@
     </style>
 </head>
 
-//Body contendo o formulário de login.
 <body>
     <div class="container">
         <h1>Faça seu Login ou se Cadastre abaixo:</h1>
@@ -78,7 +74,7 @@
         </form>
        
 
-        //Inicio da parte que valida o login do usuário usando PHP.
+        
         <?php
 
 
