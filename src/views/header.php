@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Inicial</title>
+    <link rel="icon" href="images/icons8-pinheiro-16.png" type="image/png">
 </head>
 <body>
-    <h1>Seja bem vindo ao nosso site!!</h1>
+    <?php
+       
+        require_once 'header.php';
+        
+    ?>
 </body>
 </html>

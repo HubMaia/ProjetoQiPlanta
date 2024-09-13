@@ -13,7 +13,6 @@ class ComposerStaticInitec8282d23e73d94f0c3e683e576dc922
         ),
         'M' => 
         array (
-            'Monolog\\' => 8,
             'MeuProjeto\\' => 11,
         ),
     );
@@ -22,10 +21,6 @@ class ComposerStaticInitec8282d23e73d94f0c3e683e576dc922
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Monolog\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'MeuProjeto\\' => 
         array (

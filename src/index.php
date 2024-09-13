@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu Login</title> 
+    <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
 
+</head>    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,8 +61,6 @@
             opacity: 0.8;
         }
     </style>
-</head>
-
 <body>
     <div class="container">
         <h1>Faça seu Login ou se Cadastre abaixo:</h1>
@@ -69,7 +69,7 @@
             <input type="password" name="senha" placeholder="Digite a Senha" required>
             <div>
                 <button type="submit" class="login-btn">Login</button>
-                <button type="button" class="register-btn">Cadastrar</button>
+                <button type="button" class="register-btn" onclick="window.location.href = './views/TelaCadastro.php';">Cadastrar</button>
             </div>
         </form>
        
@@ -88,12 +88,15 @@
         
         include (__DIR__ . '/../vendor/autoload.php'); 
         use MeuProjeto\model\Login; 
+        use MeuProjeto\model\UsuarioSistema;
 
         // Instancia a classe Login
         $login = new Login(); 
+        $sysu = new MeuProjeto\model\UsuarioSistema();
 
         // Verifica o login (se o formulário foi enviado)
         $login->verificarLogin(); 
+        $sysu->nome = "GustavoR";
         ?>
     </div>
 </body>
