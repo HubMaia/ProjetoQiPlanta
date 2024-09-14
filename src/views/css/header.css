@@ -1,0 +1,39 @@
+/* Estilo do header [Pedro]:oque cada coisa faz */
+header {
+    background: #f2f2f2;
+    height: 100px;/* Altura */
+    width: 100%; /* Largura */
+    display: flex; /* Tipo de exibição */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: space-between; /* Alinhamento horizontal */
+  }
+  
+  /* Estilo do logotipo */
+  header img {
+    height: 80px; /* Altura */
+    margin-left: 20px; /* Margem esquerda */
+  }
+  
+  /* Estilo do menu de navegação */
+  nav {
+    margin-right: 20px; /* Margem direita */
+  }
+  
+  /* Estilo da lista de links */
+  nav ul {
+    list-style-type: none; /* Tipo de estilo da lista */
+    display: flex; /* Tipo de exibição */
+  }
+  
+  /* Estilo dos itens da lista */
+  nav ul li {
+    margin: 0 10px; /* Margem */
+  }
+  
+  /* Estilo dos links */
+  nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Decoração do texto */
+    font-weight: bold; /* Peso da fonte */
+  }
+  
