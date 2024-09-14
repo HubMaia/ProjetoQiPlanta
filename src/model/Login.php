@@ -28,7 +28,7 @@ class Login {
                     return; // Interrompe o loop após encontrar o usuário
                 }
             }
-            echo "Acesso negado.";
+            echo("<b style='Color: red; font-size: 20px;'>Acesso Negado!</b>");
         }
     }
 }

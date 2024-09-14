@@ -1,0 +1,97 @@
+*body { /*  ESTILO DA PAGINA DE LOGIN   */
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background: linear-gradient(16deg, rgba(242,242,242,1) 0%, rgba(146,156,147,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+form{
+    padding: 10px;
+    position: center;
+    margin-left: -15px;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin:40px;
+}
+.container button {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 1%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.register-btn {
+    background-color: #008CBA;
+    color: white;
+}
+.login-btn:hover, .register-btn:hover {
+    opacity: 0.8;
+}
+
+/*   ESTILO PAGINA CADASTRO   */
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 50px;
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin: 40px auto; /* Updated margin property  [Pedro]: Usou GPT para fazer isso? isso é a mesma coisa que o login a maioria*/
+}
+.container h1 { /* estava errado porque não tinha h2 em nenhum lugar*/
+    margin-bottom: 20px;
+}
+
+form .form-input{
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    justify-items: center;
+}
+.container input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+form .form-input{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form .btn-cadastro{
+    background-color: #008CBA;
+    font-weight:bold;
+    color: white;
+}
+
+form .login-btn {
+    background-color: #4CAF50;
+    font-weight:bold;
+    color: white;
+}
+.login-btn:hover, .btn-cadastro:hover {
+    opacity: 0.8;
+    font-weight:bold;
+    border-color: #068502 solid 4px;
+    background-color: #068502;
+}
+/*form-input btn-cadastro*/

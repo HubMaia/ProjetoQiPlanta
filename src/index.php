@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça seu Login</title> 
-    <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
-
-    
-    <link rel="stylesheet" href="views/style.css">
+    <title>Login</title> 
+    <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png"> <!--Icon -->
+    <link rel="stylesheet" href="views/css/cadastro&login.css">
 <head>
     <div class="container">
-        <h1>Faça seu Login ou se Cadastre abaixo:</h1>
+        <h1>Faça seu Login<br> ou<br> se Cadastre abaixo:</h1>
         <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <input type="text" name="usuario" placeholder="Digite o nome do Usuario" required>
             <input type="password" name="senha" placeholder="Digite a Senha" required>
+           
             <div>
                 <button type="submit" class="login-btn">Login</button>
                 <button type="button" class="register-btn" onclick="window.location.href = './views/TelaCadastro.php';">Cadastrar</button>
@@ -28,8 +27,7 @@
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
 
-        // Usa a classe Login do namespace MeuProjeto\Login
-        
+        // Usa a classe Login do namespace MeuProjeto\Login     
         include (__DIR__ . '/../vendor/autoload.php'); 
         use MeuProjeto\model\Login; 
         use MeuProjeto\model\UsuarioSistema;
