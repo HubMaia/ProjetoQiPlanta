@@ -7,9 +7,12 @@
     <link rel="icon" href="images/icons8-pinheiro-16.png" type="image/png">
 </head>
 <body>
+
+
+<h1>OLA MUNDO!</h1>
     <?php
        
-        require_once 'header.php';
+        
         
     ?>
 </body>
