@@ -16,6 +16,7 @@ form{
 .container {
     background-color: #fff;
     padding: 20px;
+    margin-top: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
@@ -58,7 +59,7 @@ form .form-input{
     width: 100%;
     padding: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 30px;
     margin: 10px;
     justify-items: center;
 }
@@ -70,13 +71,6 @@ form .form-input{
     text-align: center;
     margin: 10px;
 }
-form .form-input{
-    font-weight: bold;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-
 form .btn-cadastro{
     background-color: #008CBA;
     font-weight:bold;
@@ -88,10 +82,18 @@ form .login-btn {
     font-weight:bold;
     color: white;
 }
-.login-btn:hover, .btn-cadastro:hover {
+.login-btn:hover{
     opacity: 0.8;
     font-weight:bold;
     border-color: #068502 solid 4px;
     background-color: #068502;
+    background: linear-gradient(164deg, rgba(6,133,2,1) 0%, rgba(3,47,2,1) 100%);
+}
+.btn-cadastro:hover {
+    opacity: 0.8;
+    font-weight:bold;
+    border-color: white solid 6px;
+    background: rgb(0,140,186);
+    background: radial-gradient(circle, rgba(0,140,186,1) 0%, rgba(0,36,48,1) 100%);
 }
 /*form-input btn-cadastro*/
