@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
-<<<<<<< HEAD
-
 
 <h1>OLA MUNDO!</h1>
-=======
 <header>
     <!-- Logotipo -->
     <img style="border-radius:50%" src="" alt="Logo">
@@ -27,7 +24,6 @@
       </ul>
     </nav>
   </header>
->>>>>>> b41896e4c04e1f5a104b9ab2c3def9e7ef8ae942
     <?php
        
         
