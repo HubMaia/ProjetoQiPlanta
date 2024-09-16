@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
+
+<h1>OLA MUNDO!</h1>
 <header>
     <!-- Logotipo -->
     <img style="border-radius:50%" src="" alt="Logo">
@@ -24,7 +26,7 @@
   </header>
     <?php
        
-        require_once 'header.php';
+        
         
     ?>
 </body>
