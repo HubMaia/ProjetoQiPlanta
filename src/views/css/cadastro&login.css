@@ -74,8 +74,15 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     cursor: pointer;
 }
 form .login-btn {
+    color: #4CAF50;
+    font-weight:bold;
+    border: #4CAF50 3px solid;
+    background-color: white;
+}
+form .login-btn:hover{
     background-color: #4CAF50;
     font-weight:bold;
+    border: #4CAF50 3px solid;
     color: white;
 }
 .container h1 { /* estava errado porque não tinha h2 em nenhum lugar*/
@@ -85,7 +92,7 @@ form .login-btn {
     padding:  5px auto;
     color: #008CBA;
     border: 10px;
-    border-color: #008CBA;
+    border: #008CBA 3px solid;
     background-color: white;
 }
 .btn-cadastro-login:hover{
