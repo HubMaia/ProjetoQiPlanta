@@ -1,4 +1,5 @@
-*body { /*  ESTILO DA PAGINA DE LOGIN   */
+*
+body { /*  ESTILO DA PAGINA DE LOGIN   */
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     background: linear-gradient(16deg, rgba(242,242,242,1) 0%, rgba(146,156,147,1) 100%);
@@ -8,22 +9,63 @@
     height: 100vh;
     margin: 0;
 }
-form{
+.divisoria-login { /*DIVISÃO 2 colunas*/
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr;
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+}
+.div-login-centro{ /*COLUNA 1 LOGIN COLOR/CADASTRO*/
+    color: azure;
+    justify-items: auto center;
+    border-radius: 10px;
+    background: rgb(14,168,170);
+    background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgba(7,88,122,1) 100%);
+}
+/*.div-login-centro .btn-cadastro-login{
+    margin-top: 200px;
+    width: 30px;
+    height: 40px;
+}*/
+
+.container { /*até agora aqui ta ok, não mexa em nada*/
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    margin:40px;
+    padding-right: 10px;
+    padding: auto;
+}
+.container form{
+    margin-top: 10px;
     padding: 10px;
     position: center;
     margin-left: -15px;
 }
-.container {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
-    margin:40px;
+
+.container form .titulo-login{
+    font-weight: bold;
+    justify-items: center;
+    display: flex;
+    padding-top: 20px;
 }
-.container button {
+.container .div-btn-login{
+    position:absolute;
+    margin-bottom: 0px;
+}
+
+/*[Pedro]:      BTn/INPUT area          */
+.div-btn-cadastro-login{
+    margin-top: 85px;
+}
+
+.container button{
     width: 48%;
     padding: 10px;
     margin: 10px 1%;
@@ -31,16 +73,52 @@ form{
     border-radius: 5px;
     cursor: pointer;
 }
-.register-btn {
-    background-color: #008CBA;
+form .login-btn {
+    background-color: #4CAF50;
+    font-weight:bold;
     color: white;
 }
+.container h1 { /* estava errado porque não tinha h2 em nenhum lugar*/
+    margin-bottom: 20px;
+}
+.btn-cadastro-login{
+    padding:  5px auto;
+    color: #008CBA;
+    border: 10px;
+    border-color: #008CBA;
+    background-color: white;
+}
+.btn-cadastro-login:hover{
+    background-color: #008CBA;
+    color: white;
+    border: 10px;
+    border-color: #02a8df;
+}
+.container input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
+    width: 100%;
+    padding: 10px 0;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+/*form .btn-cadastro{
+    background-color: #008CBA;
+    font-weight:bold;
+    color: white;
+}
+
+
+
+
+
+/* [Pedro]: ATUALIZANDO TODO CSS                            />
+
 .login-btn:hover, .register-btn:hover {
     opacity: 0.8;
 }
 
 /*   ESTILO PAGINA CADASTRO   */
-.container {
+.container-cadastro {
     font-family: Arial, sans-serif;
     background-color: #fff;
     padding: 50px;
@@ -51,49 +129,3 @@ form{
     text-align: center;
     margin: 40px auto; /* Updated margin property  [Pedro]: Usou GPT para fazer isso? isso é a mesma coisa que o login a maioria*/
 }
-.container h1 { /* estava errado porque não tinha h2 em nenhum lugar*/
-    margin-bottom: 20px;
-}
-
-form .form-input{
-    width: 100%;
-    padding: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    margin: 10px;
-    justify-items: center;
-}
-.container input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
-    width: 100%;
-    padding: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px;
-}
-form .btn-cadastro{
-    background-color: #008CBA;
-    font-weight:bold;
-    color: white;
-}
-
-form .login-btn {
-    background-color: #4CAF50;
-    font-weight:bold;
-    color: white;
-}
-.login-btn:hover{
-    opacity: 0.8;
-    font-weight:bold;
-    border-color: #068502 solid 4px;
-    background-color: #068502;
-    background: linear-gradient(164deg, rgba(6,133,2,1) 0%, rgba(3,47,2,1) 100%);
-}
-.btn-cadastro:hover {
-    opacity: 0.8;
-    font-weight:bold;
-    border-color: white solid 6px;
-    background: rgb(0,140,186);
-    background: radial-gradient(circle, rgba(0,140,186,1) 0%, rgba(0,36,48,1) 100%);
-}
-/*form-input btn-cadastro*/

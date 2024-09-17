@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/cadastro&login.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-cadastro">
         <h1>Cadastro de Cliente </h1><br>
     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         
