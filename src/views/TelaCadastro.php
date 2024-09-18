@@ -7,24 +7,39 @@
 </head>
 <body>
     <div class="container-cadastro">
-        <h1>Cadastro de Cliente </h1><br>
-    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <div class="divisoria-login">
+        <div>
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <h1>Cadastro de Cliente </h1><br>   
+                    <label for="username">Nome de Usuário:</label>
+                    <input class="form-input" type="text" id="username" name="usuario" placeholder="Insira um nome de usuário" required><br><br>
         
-        <label for="username">Nome de Usuário:</label>
-        <input class="form-input" type="text" id="username" name="usuario" placeholder="Insira um nome de usuário" required><br><br>
-        
-        <label for="password">Senha:</label>
-        <input class="form-input" type="password" id="password" name="senha" placeholder="Insira uma senha" required><br><br>
+                    <label for="password">Senha:</label>
+                    <input class="form-input" type="password" id="password" name="senha" placeholder="Insira uma senha" required><br><br>
 
-        <label for="password">Repita sua senha:</label>
-        <input class="form-input" type="password" id="password" name="senha2" placeholder="Confirme sua senha" required><br><br>
+                    <label for="password">Repita sua senha:</label>
+                    <input class="form-input" type="password" id="password" name="senha2" placeholder="Confirme sua senha" required><br><br>
 
-        <label for="robot">Não sou um robô:</label>
-        <input type="checkbox" id="robot" name="robot" required><br><br>
-        
-        
-        <input class="btn-cadastro" type="submit" value="Cadastrar">
-    </form>
+                  
+                   <input type="checkbox" id="robot" name="robot" placeholder="não sou" required>
+                 
+   
+                    <input class="login-btn" type="submit" value="Cadastrar">
+            </form>
+        </div>
+
+        <div class="div-cadastro-centro">
+            <div style="margin-top:60px;"></div>
+                        <h2>Login</h2> <br>
+                    <p>Ja possui Login em nosso site? <br>fazer <a href="./../index.php"><strong>login</strong></a></p>  <br>   <!--[Pedro]: texto teste, podem escolher oque colocar-->
+                    <p> <b>Em desenvolvimeto...</b> </p>    
+            </div>
+        </div>
+
+            </div>
+        </div>
+   
+ 
 
 
     <?php

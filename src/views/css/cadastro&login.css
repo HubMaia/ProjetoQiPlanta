@@ -23,12 +23,15 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     background: rgb(14,168,170);
     background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgba(7,88,122,1) 100%);
 }
-/*.div-login-centro .btn-cadastro-login{
-    margin-top: 200px;
-    width: 30px;
-    height: 40px;
-}*/
-
+.div-cadastro-centro{
+    color: azure;
+    margin-right: -70px;
+    margin-left: 30px;
+    justify-items: auto center;
+    border-radius: 10px;
+    background: rgb(14,168,170);
+    background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgba(7,88,122,1) 100%);    
+}
 .container { /*até agora aqui ta ok, não mexa em nada*/
     background-color: #fff;
     margin-top: 40px;
@@ -48,12 +51,19 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     position: center;
     margin-left: -15px;
 }
-
 .container form .titulo-login{
     font-weight: bold;
     justify-items: center;
     display: flex;
     padding-top: 20px;
+}
+.div-sou-robo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+        
 }
 .container .div-btn-login{
     position:absolute;
@@ -108,6 +118,45 @@ form .login-btn:hover{
     border-radius: 5px;
     margin: 10px;
 }
+.container-cadastro { /*até agora aqui ta ok, não mexa em nada*/
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    margin:40px;
+    padding-right: 10px;
+    padding: auto;
+}
+.container form{
+    margin-top: 10px;
+    padding: 10px;
+    position: center;
+    margin-left: -15px;
+}
+.container-cadastro form .titulo-login{
+    font-weight: bold;
+    justify-items: center;
+    display: flex;
+    padding-top: 20px;
+}
+.container-cadastro .div-btn-login{
+    position:absolute;
+    margin-bottom: 0px;
+}
+.container-cadastro input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
+    width: 100%;
+    padding: 10px 0;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+
 /*form .btn-cadastro{
     background-color: #008CBA;
     font-weight:bold;
@@ -120,19 +169,4 @@ form .login-btn:hover{
 
 /* [Pedro]: ATUALIZANDO TODO CSS                            />
 
-.login-btn:hover, .register-btn:hover {
-    opacity: 0.8;
-}
-
 /*   ESTILO PAGINA CADASTRO   */
-.container-cadastro {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    padding: 50px;
-    padding: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
-    margin: 40px auto; /* Updated margin property  [Pedro]: Usou GPT para fazer isso? isso é a mesma coisa que o login a maioria*/
-}
