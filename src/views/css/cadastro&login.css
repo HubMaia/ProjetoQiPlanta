@@ -23,9 +23,11 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     background: rgb(14,168,170);
     background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgba(7,88,122,1) 100%);
 }
-.div-cadastro-centro{
+.div-cadastro-centro{ /* [PEDRO]: CLASSE MUITO PERIGOSA DE ALTERAR*/
     color: azure;
     margin-right: -70px;
+    width: 360px;   /*360*/
+    height: 500px; /*500*/
     margin-left: 30px;
     justify-items: auto center;
     border-radius: 10px;

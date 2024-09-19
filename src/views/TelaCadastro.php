@@ -20,24 +20,28 @@
                     <label for="password">Repita sua senha:</label>
                     <input class="form-input" type="password" id="password" name="senha2" placeholder="Confirme sua senha" required><br><br>
 
-                  
-                   <input type="checkbox" id="robot" name="robot" placeholder="não sou" required>
-                 
-   
-                    <input class="login-btn" type="submit" value="Cadastrar">
-            </form>
-        </div>
-
-        <div class="div-cadastro-centro">
-            <div style="margin-top:60px;"></div>
-                        <h2>Login</h2> <br>
+                 <div style="position: relative; right: 90px;" >
+                     <input type="checkbox" id="robot" name="robot" required>
+                 </div> <!--[Pedro]: --[    AJUSTES, PERIGOSO EM ALTERAR NO DESIGN (RISCO DE BUGAR TUDO)    ] -->
+                 <div style="position: relative; top: -43px;" >
+                     <p>Não sou um robo</p>
+                     
+                     
+                     <input class="login-btn" type="submit" value="Cadastrar">
+                    </div>
+                    </form>
+                </div>
+                
+                <div class="div-cadastro-centro">
+                    <div style="margin-top:60px;"></div>
+                    <h2>Login</h2> <br>
                     <p>Ja possui Login em nosso site? <br>fazer <a href="./../index.php"><strong>login</strong></a></p>  <br>   <!--[Pedro]: texto teste, podem escolher oque colocar-->
                     <p> <b>Em desenvolvimeto...</b> </p>    
+                </div>
             </div>
+            
         </div>
-
-            </div>
-        </div>
+    </div>
    
  
 
