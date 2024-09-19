@@ -21,7 +21,7 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     justify-items: auto center;
     border-radius: 10px;
     background: rgb(14,168,170);
-    background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgba(7,88,122,1) 100%);
+    background: linear-gradient(203deg, rgb(14, 167, 170) 0%, rgba(7,88,122,1) 100%);
 }
 .div-cadastro-centro{ /* [PEDRO]: CLASSE MUITO PERIGOSA DE ALTERAR*/
     color: azure;
@@ -32,7 +32,13 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     justify-items: auto center;
     border-radius: 10px;
     background: rgb(14,168,170);
-    background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgba(7,88,122,1) 100%);    
+    background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgb(7, 86, 120) 100%);    
+}
+.div-cadastro-centro a{
+    color: white; /* Cor do texto */
+    font-style: italic;
+    text-decoration: none; /* Decoração do texto */
+    font-weight: bold; /* Peso da fonte */
 }
 .container { /*até agora aqui ta ok, não mexa em nada*/
     background-color: #fff;
@@ -156,19 +162,3 @@ form .login-btn:hover{
     border-radius: 5px;
     margin: 10px;
 }
-
-
-
-/*form .btn-cadastro{
-    background-color: #008CBA;
-    font-weight:bold;
-    color: white;
-}
-
-
-
-
-
-/* [Pedro]: ATUALIZANDO TODO CSS                            />
-
-/*   ESTILO PAGINA CADASTRO   */

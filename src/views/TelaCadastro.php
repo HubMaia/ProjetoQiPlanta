@@ -31,11 +31,11 @@
                     </form>
                 </div>
                 
-                <div class="div-cadastro-centro">
+                <div class="div-cadastro-centro"> <!--  div color/login -->
                     <div style="margin-top:60px;"></div>
                     <h2>Login</h2> <br>
-                    <p>Ja possui Login em nosso site? <br>fazer <a href="./../index.php"><strong>login</strong></a></p>  <br> <!--[Pedro]: texto teste, podem escolher oque colocar-->
-                    <p> <b>Em desenvolvimeto...</b> </p>    
+                    <p>Ja possui Login em nosso site? <br>fazer login<br><br> <a href="./../index.php"><strong>Click aqui</strong></a></p>  <br> <!--[Pedro]: texto teste, podem escolher oque colocar-->
+                    
                 </div>
             </div>
             
