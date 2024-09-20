@@ -12,6 +12,6 @@ class ConnectionFactory {
             self::$connection = new \PDO("mysql:host=localhost");
         return new \PDO(dsn: $dnsStr, username:"root", password:"root");
 
-    }
-
-}    
+        }
+    }    
+}
