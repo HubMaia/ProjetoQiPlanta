@@ -1,7 +1,7 @@
 <?php
 
 // Inclui o autoload do Composer
-require __DIR__ . "/../../vendor/autoload.php";
+require __DIR__ . "/../vendor/autoload.php";
 
 
 // Usa a classe Login do namespace MeuProjeto\Login
@@ -12,12 +12,14 @@ use MeuProjeto\model\Cadastrar;
 // Cria uma instância da classe Login
 $login = new Login();
 
-$sysu = new UsuarioSistema();
-$sysu->nome = "GustavoR";
+$usr = new UsuarioSistema();
+$usr->nome = "GustavoR";
+
+echo print_r(value:$usr, return: true);
 
 $cadastro = new Cadastrar();
 
-var_dump($sysu->nome);
+var_dump($usr->nome);
 
 // Verifica o login (se o formulário foi enviado)
 $login->verificarLogin();
