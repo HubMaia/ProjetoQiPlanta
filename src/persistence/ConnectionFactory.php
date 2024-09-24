@@ -2,6 +2,8 @@
 
     namespace MeuProjeto\persistence;
 
+use \PDO;
+
 class ConnectionFactory {
 
     private static $connection = null;
@@ -10,12 +12,13 @@ class ConnectionFactory {
     public static function getConnection() {
        
         if (self::$connection === null) {
-            $dnsStr = "mysql:host=localhost;dbname=phpoo";
-            self::$connection = new \PDO("mysql:host=localhost");
-
+            $dnsStr = "mysql:host=172.17.0.2;dbname=bdqiplanta";
+            self::$connection = new \PDO($dnsStr, "root", "1234");  
+            self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
 
         return self::$connection;
 
     }    
+
 }

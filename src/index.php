@@ -41,9 +41,11 @@
 
 
 //Este código abaixo exibe os erros que o PHP der na tela do usuário propositalmente, para que assim possam fazer a verificação manual do problema que possa estar ocorrendo.
-//ini_set('display_errors', 1);
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+        include("main.php");
 
         // Usa a classe Login do namespace MeuProjeto\Login     
         include (__DIR__ . '/../vendor/autoload.php'); 
