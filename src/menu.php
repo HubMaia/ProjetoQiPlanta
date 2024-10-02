@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace</title>
-    <link rel="stylesheet" href="/src/views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="index.php"><img src="/src/views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+            <a href="index.php"><img src="views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
         </div>
         <nav>
             <ul>
